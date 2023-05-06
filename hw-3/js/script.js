@@ -1,5 +1,5 @@
 const question1 = +prompt('Скільки тобі років?');
-const question2 = prompt('У якому місті він живеш?');
+const question2 = prompt('У якому місті ти живеш?');
 const question3 = prompt('Який улюблений вид спорту?');
 
 if(question1 > 0) {

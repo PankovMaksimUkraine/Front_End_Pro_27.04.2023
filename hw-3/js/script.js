@@ -1,9 +1,9 @@
-const question1 = +prompt('Скільки тобі років?');
+const question1 = prompt('У якому році ти народився?');
 const question2 = prompt('У якому місті ти живеш?');
 const question3 = prompt('Який улюблений вид спорту?');
 
 if(question1 > 0) {
-     option = `Тобі ${question1} років.`}
+     option = `Тобі ${ 2023 - question1} років.`}
 else if(question1 === null)  {
      option = "Шкода, що Ви не захотіли ввести свій вік. "
 } else {
@@ -22,6 +22,9 @@ switch(question2) {
     case null :
         capital = "Шкода, що Ви не захотіли ввести свою країну. "
     break
+    case "" :
+    capital = "Ви не ввели свою країну. "
+    break
     default :
     capital =  `Ти живеш  у місті ${question2}.`
 }
@@ -38,7 +41,11 @@ switch(question2) {
     case null  : 
          sport = "Шкода, що Ви не захотіли ввести свій улюблений спорт."
     break 
+    case "" :
+         sport  = "Ви не ввели свій улюблений спорт "
+    break
     default :
          sport = `Твій улюблений спорт ${question3}. `
  }
-alert(option + capital + sport)
+
+  alert(option +capital + sport)

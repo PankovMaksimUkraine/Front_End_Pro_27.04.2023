@@ -42,4 +42,19 @@ else if (number > 1) {
     }
 }
 
-// 4 завдання
+// 5 завдання
+
+
+let o = 81 ;
+let result2 = false;
+for(let degree = 1 ; degree <= 100; degree++) {
+     if( o == 3**degree ){
+        result2 = true
+     }
+}
+if (result2) {
+    console.log( `число ${o} можна одержати це число шляхом зведення числа 3 у деякий ступінь `)
+} else {
+    console.log( `число ${o}   не можна одержати це число шляхом зведення числа 3 у деякий ступінь `)
+}
+
